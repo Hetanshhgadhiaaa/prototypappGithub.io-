@@ -1,0 +1,127 @@
+export default function Home() {
+  return (
+    <main className="p-6 space-y-10">
+      
+      {/* Header */}
+      <header className="text-center space-y-2">
+        <h1 className="text-4xl font-bold">🚀 Next.js Project</h1>
+        <p className="text-gray-600">
+          A modern Next.js 15 application built with TypeScript and Tailwind CSS.
+        </p>
+      </header>
+
+      {/* Features */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-2">🚀 Features</h2>
+        <ul className="list-disc ml-6 space-y-1">
+          <li><strong>Next.js 15</strong> - Improved performance and features</li>
+          <li><strong>React 19</strong> - Enhanced capabilities</li>
+          <li><strong>Tailwind CSS</strong> - Utility-first styling</li>
+        </ul>
+      </section>
+
+      {/* Installation */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-2">🛠️ Installation</h2>
+        <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto">
+{`npm install
+# or
+yarn install
+
+npm run dev
+# or
+yarn dev`}
+        </pre>
+        <p className="mt-2">
+          Open <a href="http://localhost:4028" className="text-blue-500 underline">
+            http://localhost:4028
+          </a>
+        </p>
+      </section>
+
+      {/* Project Structure */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-2">📁 Project Structure</h2>
+        <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto">
+{`nextjs/
+├── public/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   ├── styles/
+├── next.config.mjs
+├── package.json
+├── postcss.config.js
+└── tailwind.config.js`}
+        </pre>
+      </section>
+
+      {/* Page Editing */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-2">🧩 Page Editing</h2>
+        <p>
+          Edit <code className="bg-gray-200 px-1 rounded">src/app/page.tsx</code> to update the page automatically.
+        </p>
+      </section>
+
+      {/* Styling */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-2">🎨 Styling</h2>
+        <ul className="list-disc ml-6 space-y-1">
+          <li>Utility-first approach</li>
+          <li>Custom theme support</li>
+          <li>Responsive design</li>
+        </ul>
+      </section>
+
+      {/* Scripts */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-2">📦 Available Scripts</h2>
+        <ul className="list-disc ml-6 space-y-1">
+          <li>npm run dev</li>
+          <li>npm run build</li>
+          <li>npm run start</li>
+          <li>npm run serve</li>
+          <li>npm run lint</li>
+          <li>npm run format</li>
+        </ul>
+      </section>
+
+      {/* Deployment */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-2">📱 Deployment</h2>
+        <pre className="bg-gray-100 p-4 rounded-lg text-sm">
+{`npm run build`}
+        </pre>
+      </section>
+
+      {/* Learn More */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-2">📚 Learn More</h2>
+        <ul className="list-disc ml-6 space-y-1">
+          <li>
+            <a href="https://nextjs.org/docs" className="text-blue-500 underline">
+              Next.js Documentation
+            </a>
+          </li>
+          <li>
+            <a href="https://nextjs.org/learn" className="text-blue-500 underline">
+              Learn Next.js
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center border-t pt-4">
+        <h2 className="text-xl font-semibold">🙏 Acknowledgments</h2>
+        <p>Built with Rocket.new</p>
+        <p>Powered by Next.js and React</p>
+        <p>Styled with Tailwind CSS</p>
+      </footer>
+
+    </main>
+  );
+}
